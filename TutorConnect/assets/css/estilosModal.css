@@ -1,0 +1,59 @@
+/* Estilos para el modal */
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 80%; /* Define el ancho máximo del contenido del modal */
+    max-height: 80%; /* Define la altura máxima del contenido del modal */
+    overflow: auto; /* Agrega desplazamiento si el contenido es demasiado grande */
+    position: relative; /* Asegura que el contenido sea posicionado relativo al modal */
+}
+
+/* Estilos para el botón de cerrar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para los botones dentro del modal */
+.modal-content .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón de cancelar */
+.modal-content .btn.cancel {
+    background-color: #ccc;
+    color: #333;
+}
+
+/* Estilos para el botón de confirmar */
+.modal-content .btn.confirm {
+    background-color: #007bff;
+    color: #fff;
+}

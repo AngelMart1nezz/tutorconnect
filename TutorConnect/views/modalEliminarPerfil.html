@@ -1,0 +1,12 @@
+<div id="modalEliminarPerfil" class="modal">
+    <div class="modal-content">
+        <h2>¿Estás seguro de eliminar tu perfil?</h2>
+        <div class="modal-buttons">
+            <a href="" class="btn cancel" id="cancelarEliminar">Cancelar</a>
+            <form action="../assets/php/eliminarUsuario.php" method="POST">
+                <input type="hidden" name="usuario" value="<?php echo $_SESSION['usuario']; ?>">
+                <input type="submit" class="btn danger" value="Eliminar">
+            </form>
+        </div>
+    </div>
+</div>
