@@ -46,6 +46,8 @@
                 <?php
                 session_start();
                 if (isset($_SESSION['error_message'])) {
+                    $mensajeErrorSanitizado = sanitizar($_SESSION['error_message']); 
+                    error_log('Mensaje de error: ' . $mensajeErrorSanitizado);
                     echo '<div id="error-message" class="alert alert-danger">' . $_SESSION['error_message'] . '</div>';
                     unset($_SESSION['error_message']);
                 }
